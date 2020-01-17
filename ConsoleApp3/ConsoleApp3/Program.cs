@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    class Program
+    public class Program
     {
         public static decimal Tax(decimal pajamos)
         {
