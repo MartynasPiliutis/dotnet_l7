@@ -22,14 +22,14 @@ namespace ConsoleApp6
                     {
                         string trimNr = "PIRMAS TRIMESTRAS";
                         int[] trimestras = item.Trimestras1;
-                        double vidurkis = item.paskaiciuojaTrimestroVidurki(trimestras);
+                        double vidurkis = item.PaskaiciuojaTrimestroVidurki(trimestras);
                         IsvedaIEkranaStudentoKortele(trimNr, vidurkis);
                     }
                     else if (i == 2)
                     {
                         string trimNr = "ANTRAS TRIMESTRAS";
                         int[] trimestras = item.Trimestras2;
-                        double vidurkis = item.paskaiciuojaTrimestroVidurki(trimestras);
+                        double vidurkis = item.PaskaiciuojaTrimestroVidurki(trimestras);
                         IsvedaIEkranaStudentoKortele(trimNr, vidurkis);
 
                     }
@@ -37,18 +37,18 @@ namespace ConsoleApp6
                     {
                         string trimNr = "TRECIAS TRIMESTRAS";
                         int[] trimestras = item.Trimestras3;
-                        double vidurkis = item.paskaiciuojaTrimestroVidurki(trimestras);
+                        double vidurkis = item.PaskaiciuojaTrimestroVidurki(trimestras);
                         IsvedaIEkranaStudentoKortele(trimNr, vidurkis);
 
                     }
                 }
-                isvedaIEkranaMetiniVidurki(item);
+                IsvedaIEkranaMetiniVidurki(item);
             }
         }
 
-        private static void isvedaIEkranaMetiniVidurki(Studentas item)
+        private static void IsvedaIEkranaMetiniVidurki(Studentas item)
         {
-            double metVidurkis = item.paskaiciuojaMetiniVidurki(item.Trimestras1, item.Trimestras2, item.Trimestras3);
+            double metVidurkis = item.PaskaiciuojaMetiniVidurki(item.Trimestras1, item.Trimestras2, item.Trimestras3);
             Console.WriteLine("METINIS VIDURKIS: {0} ({1})", Math.Round(metVidurkis, 0), Math.Round(metVidurkis, 2));
             Console.WriteLine("*****************************************");
             Console.WriteLine();
@@ -63,7 +63,7 @@ namespace ConsoleApp6
             Console.WriteLine("=========================================");
         }
 
-        public static Studentas[] sukuriaStudentuMasyva()
+        public static Studentas[] SukuriaStudentuMasyva()
         {
             Studentas[] studMasyvas = new Studentas[5];
             studMasyvas[0] = new Studentas(12345987, new int[] { 10, 6, 9, 9, 9, 10, 5, 8 }, new int[] { 7, 5, 9, 7, 9, 10, 10, 6, 8 }, new int[] { 10, 5, 9, 8, 9 });

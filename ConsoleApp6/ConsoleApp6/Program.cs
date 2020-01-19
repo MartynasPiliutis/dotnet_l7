@@ -10,7 +10,7 @@ namespace ConsoleApp6
     {
         static void Main(string[] args)
         {
-            Studentas[] studMasyvas = StudKortele.sukuriaStudentuMasyva();
+            Studentas[] studMasyvas = StudKortele.SukuriaStudentuMasyva();
             StudKortele.ParodoStudentoKorteleSuVildurkiais(studMasyvas);
             Console.ReadLine();
         }

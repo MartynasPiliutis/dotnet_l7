@@ -21,21 +21,19 @@ namespace ConsoleApp6
 			Trimestras3 = t3;
 		}
 
-		public double paskaiciuojaTrimestroVidurki(int[] trimestras)
+		public double PaskaiciuojaTrimestroVidurki(int[] trimestras)
 		{
-			double trimestroVidurkis = 0;
 			int trimestroSuma = 0;
 			for (int i = 0; i < trimestras.Length; i++)
 			{
 				trimestroSuma += trimestras[i];
 			}
-			trimestroVidurkis = Convert.ToDouble(trimestroSuma) / trimestras.Length;
+			double trimestroVidurkis = Convert.ToDouble(trimestroSuma) / trimestras.Length;
 			return trimestroVidurkis;
 		}
 
-		public double paskaiciuojaMetiniVidurki(int[] Trimestras1, int[] Trimestras2, int[] Trimestras3)
+		public double PaskaiciuojaMetiniVidurki(int[] Trimestras1, int[] Trimestras2, int[] Trimestras3)
 		{
-			double metinisVidurkis = 0;
 			int trimestruSuma = 0;
 			for (int i = 0; i < Trimestras1.Length; i++)
 			{
@@ -52,7 +50,7 @@ namespace ConsoleApp6
 				trimestruSuma += Trimestras3[i];
 			}
 
-			metinisVidurkis = Convert.ToDouble(trimestruSuma) / (Trimestras1.Length + Trimestras2.Length + Trimestras3.Length);
+			double metinisVidurkis = Convert.ToDouble(trimestruSuma) / (Trimestras1.Length + Trimestras2.Length + Trimestras3.Length);
 			return metinisVidurkis;
 		}
 	}
